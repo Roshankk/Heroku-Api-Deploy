@@ -6,7 +6,7 @@ const student = require('./student/studentList.json')
 // const post = require('./post')
 const port =process.env.PORT || 5050
 
-app.post('/student/studentList',(req,res)=>{
+app.get('/student/studentList',(req,res)=>{
     res.json(student)
 })
 
